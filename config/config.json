@@ -1,0 +1,33 @@
+{
+"db": {
+  "development": {
+    "username": "postgres",
+    "password": "123123",
+    "database": "poviolabs",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "123123",
+    "database": "poviolabs",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "use_env_variable": "postgres://postgres:123123@localhost:3000/poviolabs",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "123123",
+    "database": "poviolabs",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+},
+  "jwt": {
+    "secret": "poviolabs123@!@",
+    "algorithms": ["RS256"],
+    "expiresIn": "1h"
+  }
+}
