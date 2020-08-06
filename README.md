@@ -16,7 +16,7 @@ npm install
 
 
 #### Config Database
-In file /config/config.json put your postgres server information and create blank database. 
+In file **/config/config.json** put your postgres server information and create blank database. 
 After that run npx sequelize-cli db:migrate to create database structure.
 
 #### Run Application
