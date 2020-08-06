@@ -1,0 +1,5 @@
+{
+  "secret": "poviolabs123@!@",
+  "algorithms": ["RS256"],
+  "expiresIn": "1h"
+}

@@ -1,5 +1,4 @@
 {
-"db": {
   "development": {
     "username": "postgres",
     "password": "123123",
@@ -24,10 +23,5 @@
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
-},
-  "jwt": {
-    "secret": "poviolabs123@!@",
-    "algorithms": ["RS256"],
-    "expiresIn": "1h"
-  }
 }
+

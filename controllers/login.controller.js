@@ -8,17 +8,19 @@ exports.signup = async (req, res) => {
 
     const checkUser = await Users.findOne({where: {username: requestUser.username}});
     if (checkUser !== null) {
-        res.json({status: 409, message: 'Username already exists'});
+        res.status(409).json({message: 'Username already exists'});
     } else {
         await encoder.encode(requestUser.password, (hash) => {
             requestUser.password = hash;
             const insertUser = Users.build(requestUser);
             insertUser.save().then(() => {
-                res.json({status: 200, message: 'User created successfully'});
+                res.status(200).json({message: 'User created successfully'});
             }).catch((error => {
-                res.json({status: 500, message: error});
+                res.status(500).json({message: error});
             }));
-        });
+        }).catch(()=>{
+            res.status(500).json({message: "error"});
+        })
     }
 };
 
