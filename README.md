@@ -15,9 +15,9 @@ First you have to install the node modules in root directory via:
 npm install
 
 
-##Config Database
+#### Config Database
 In file /config/config.json put your postgres server information and create blank database. 
 After that run npx sequelize-cli db:migrate to create database structure.
 
-##Run Application
+#### Run Application
 After that you can start the server development mode via npm run start:dev
