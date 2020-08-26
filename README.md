@@ -8,10 +8,11 @@
 
 
 ## Setup
-Install **Node JS** and **PostgresSQL** in your local machine
 
 ### Server Configuration
-First you have to install the node modules in root directory via: **npm install**
+Install **Node JS** and **PostgresSQL** in your local machine
+
+After that you have to install the node modules in root directory via: **npm install**
 
 
 #### Config Database
