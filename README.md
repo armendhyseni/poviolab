@@ -8,7 +8,7 @@
 
 
 ## Setup
-Install Node JS and PostgresSQL in your local machine
+Install **Node JS** and **PostgresSQL** in your local machine
 
 ### Server Configuration
 First you have to install the node modules in root directory via: **npm install**
@@ -16,7 +16,7 @@ First you have to install the node modules in root directory via: **npm install*
 
 #### Config Database
 Two seperate databases must be created, one for test and one for development purposes. 
-Names of databases are predefined as (poviolabs_dev) and (poviolabs_test). In order to change your local database credentials, modify the file **/config/config.json**
+Names of databases are predefined as (poviolabs_dev) and (poviolabs_test). In order to change your local database credentials, modify the file: **/config/config.json**
 
 
 #### Running migration
