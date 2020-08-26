@@ -8,16 +8,31 @@
 
 
 ## Setup
-
+Install Node JS and PostgresSQL in your local machine
 
 ### Server Configuration
-First you have to install the node modules in root directory via:
-npm install
+First you have to install the node modules in root directory via: **npm install**
 
 
 #### Config Database
-In file **/config/config.json** put your postgres server information and create blank database. 
-After that **run npx sequelize-cli db:migrate** to create database structure.
+Two seperate databases must be created, one for test and one for development purposes. 
+Names of databases are predefined as (poviolabs_dev) and (poviolabs_test). In order to change your local database credentials, modify the file **/config/config.json**
+
+
+#### Running migration
+Migrate database structures with this command: **npm run db:migrate**
+
 
 #### Run Application
-After that you can start the server development mode via **npm run start:dev**
+You can start the server development mode via: **npm run dev**
+
+
+#### Run Tests
+You can run tests via this command: **npm run tests**
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "123123",
-    "database": "poviolabs",
+    "database": "poviolabs_dev",
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres"

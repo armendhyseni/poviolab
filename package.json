@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon index.js",
+    "db:migrate": "sequelize db:migrate --env development && sequelize db:migrate --env test",
+    "dev": "SET NODE_ENV=development && node index.js",
+    "test": "SET NODE_ENV=test && node index.js",
+    "tests": "SET NODE_ENV=test && mocha",
     "start": "node index.js"
   },
   "author": "",
