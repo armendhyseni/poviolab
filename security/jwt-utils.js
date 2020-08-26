@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const jwtConfig = require('../config/config')["jwt"];
+const jwtConfig = require('../config/jwtconfig');
 
 module.exports = {
     verify: async function (token) {

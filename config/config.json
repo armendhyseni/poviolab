@@ -10,10 +10,9 @@
   "test": {
     "username": "postgres",
     "password": "123123",
-    "database": "poviolabs",
+    "database": "poviolabs_test",
     "host": "127.0.0.1",
     "port": 5432,
-    "use_env_variable": "postgres://postgres:123123@localhost:3000/poviolabs",
     "dialect": "postgres"
   },
   "production": {
